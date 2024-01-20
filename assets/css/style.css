@@ -301,7 +301,12 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+  #hero {
+    background-attachment: scroll; /* Remove parallax effect for smaller screens */
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
