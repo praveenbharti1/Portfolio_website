@@ -303,7 +303,7 @@ h6 {
   }
 
   #hero {
-    background-attachment: scroll; /* Remove parallax effect for smaller screens */
+    background-attachment: scroll; 
   }
 }
 
