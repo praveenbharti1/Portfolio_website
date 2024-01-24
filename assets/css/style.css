@@ -264,24 +264,24 @@ h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 48px;  /* Adjusted font size for smaller screens */
   font-weight: 700;
-  line-height: 56px;
+  line-height: 48px; /* Adjusted line height for smaller screens */
   color: #fff;
 }
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
+  margin-bottom: 30px; /* Reduced margin for smaller screens */
+  font-size: 18px;  /* Adjusted font size for smaller screens */
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
   color: #fff;
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  padding-bottom: 2px;  /* Reduced padding for smaller screens */
+  letter-spacing: 0.5px;  /* Adjusted letter spacing for smaller screens */
+  border-bottom: 2px solid #149ddd;  /* Adjusted border thickness for smaller screens */
 }
 
 @media (min-width: 1024px) {
@@ -296,14 +296,26 @@ h6 {
     line-height: 36px;
   }
 
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero p {
+    font-size: 16px;  /* Adjusted font size for smaller screens */
+    margin-bottom: 20px; /* Reduced margin for smaller screens */
+  }
+
+  #hero p span {
+    padding-bottom: 1px;  /* Reduced padding for smaller screens */
+    border-bottom: 1px solid #149ddd;  /* Adjusted border thickness for smaller screens */
   }
 
   #hero {
-    background-attachment: scroll; 
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Styles for screens smaller than 768 pixels (typical mobile devices) */
+  #hero {
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed for mobile devices */
   }
 }
 
